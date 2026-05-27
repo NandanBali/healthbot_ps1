@@ -1,0 +1,10 @@
+services:
+  healthbot:
+    build: .
+    image: healthbot:latest
+    container_name: healthbot
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped

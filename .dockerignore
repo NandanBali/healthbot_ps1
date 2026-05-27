@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.git
+.gitignore
+.venv
+venv
+env
+docs
+skills
+TASK.md
+TASK2.md
+*.md
+.DS_Store
+.idea
+.vscode
