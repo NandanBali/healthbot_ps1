@@ -16,7 +16,7 @@ RUN apt-get update \
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --default-timeout=300 --retries 5 -r requirements.txt
 
 COPY app.py tools.py ./
 COPY app/ ./app/
