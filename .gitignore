@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Streamlit secrets — only the .example file should be committed
+.streamlit/secrets.toml
+
+# Trained ML artifacts — regenerable via `python -m app.ml.train`
+app/ml/artifacts/
+
+# Presentation notes — not part of the codebase
+presentation/
+presentation-notes.md
